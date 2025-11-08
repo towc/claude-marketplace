@@ -40,10 +40,9 @@ Conditionally hide successful hook execution messages.
 - **Repository:** [towc/claude-hide-hooks](https://github.com/towc/claude-hide-hooks)
 - **Installation:** `claude plugin install hide-hooks`
 - **Features:**
-  - Auto-patches on install
-  - Auto-reverts on uninstall
-  - Environment variable control (`SHOW_CLAUDE_HOOKS=true`)
+  - Simple patch/revert commands
   - Only hides successful messages, errors remain visible
+  - Easy to restore with `/hide-hooks:revert`
 
 [Learn more →](./plugins/claude-hide-hooks.md)
 

@@ -57,7 +57,7 @@ After installation, **apply the patch:**
 
 ### Default Behavior (Hooks Hidden)
 
-Once patched, hook messages are hidden by default:
+Once patched, hook messages are hidden:
 
 ```bash
 claude
@@ -68,40 +68,32 @@ claude
 When you update Claude Code, re-apply the patch:
 
 ```bash
-/hide-hooks
+/hide-hooks:patch
 ```
 
 **No need to uninstall/reinstall** - just run the command!
 
-### Show Hooks When Debugging
+### Show Hooks Again
+
+To restore hook messages, revert the patch:
 
 ```bash
-SHOW_CLAUDE_HOOKS=true claude
-```
-
-### Permanent Visibility
-
-Add to your shell profile (`.bashrc`, `.zshrc`, etc.):
-
-```bash
-export SHOW_CLAUDE_HOOKS=true
+/hide-hooks:revert
 ```
 
 ## How It Works
 
-The plugin patches the Claude binary by wrapping the hook success message rendering in a conditional check:
+The plugin patches the Claude binary by replacing the hook success message rendering:
 
 ```javascript
 // Before:
 return createElement(/* hook success message */);
 
 // After:
-return process.env.SHOW_CLAUDE_HOOKS === 'true'
-  ? createElement(/* hook success message */)
-  : null;
+return;
 ```
 
-This allows toggling visibility with an environment variable without re-patching.
+This completely removes the hook success messages from the UI.
 
 ## Reverting
 
