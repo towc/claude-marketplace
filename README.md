@@ -1,0 +1,72 @@
+# Claude Plugin Marketplace
+
+A curated collection of plugins for [Claude Code](https://claude.com/claude-code).
+
+## Available Plugins
+
+### 🔊 Claude Boops
+Add delightful sound feedback to Claude Code interactions.
+
+- **Repository:** [towc/claude-boops](https://github.com/towc/claude-boops)
+- **Installation:** `claude plugin install boops`
+- **Features:**
+  - 5 different sounds for different events
+  - Interactive visual sound editor
+  - Smart detection (success vs error)
+  - Customizable frequencies, durations, and volumes
+
+[Learn more →](./plugins/claude-boops.md)
+
+### 🙈 Claude Hide Hooks
+Conditionally hide successful hook execution messages.
+
+- **Repository:** [towc/claude-hide-hooks](https://github.com/towc/claude-hide-hooks)
+- **Installation:** `claude plugin install claude-hide-hooks`
+- **Features:**
+  - Auto-patches on install
+  - Auto-reverts on uninstall
+  - Environment variable control (`SHOW_CLAUDE_HOOKS=true`)
+  - Only hides successful messages, errors remain visible
+
+[Learn more →](./plugins/claude-hide-hooks.md)
+
+## Installation
+
+### Quick Start
+
+```bash
+# Install a plugin directly
+claude plugin install boops
+claude plugin install claude-hide-hooks
+```
+
+### From Source
+
+```bash
+# Clone the marketplace
+git clone https://github.com/towc/claude-marketplace.git
+
+# Or clone individual plugins
+cd ~/.claude/plugins/marketplaces/
+git clone https://github.com/towc/claude-boops.git
+git clone https://github.com/towc/claude-hide-hooks.git
+```
+
+## Plugin Registry
+
+All plugins are registered in [`plugins.json`](./plugins.json) for automated discovery and installation.
+
+## Contributing
+
+Have a plugin to add? Open a PR with:
+1. Your plugin repository
+2. A plugin description in `plugins/your-plugin.md`
+3. An entry in `plugins.json`
+
+## Author
+
+Created by [@towc](https://github.com/towc)
+
+## License
+
+Individual plugins have their own licenses. See each plugin's repository for details.

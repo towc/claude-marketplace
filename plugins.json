@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "id": "boops",
+      "name": "Claude Boops",
+      "description": "Add delightful sound feedback to Claude Code interactions",
+      "author": "towc",
+      "repository": "https://github.com/towc/claude-boops",
+      "homepage": "https://github.com/towc/claude-boops",
+      "version": "1.0.0",
+      "tags": ["audio", "feedback", "ux", "accessibility"],
+      "icon": "🔊",
+      "install": "claude plugin install boops"
+    },
+    {
+      "id": "claude-hide-hooks",
+      "name": "Claude Hide Hooks",
+      "description": "Conditionally hide successful hook execution messages",
+      "author": "towc",
+      "repository": "https://github.com/towc/claude-hide-hooks",
+      "homepage": "https://github.com/towc/claude-hide-hooks",
+      "version": "1.0.0",
+      "tags": ["hooks", "ui", "cleanup", "productivity"],
+      "icon": "🙈",
+      "install": "claude plugin install claude-hide-hooks"
+    }
+  ]
+}
