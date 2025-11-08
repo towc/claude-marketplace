@@ -14,8 +14,8 @@
       "install": "claude plugin install boops"
     },
     {
-      "id": "claude-hide-hooks",
-      "name": "Claude Hide Hooks",
+      "id": "hide-hooks",
+      "name": "Hide Hooks",
       "description": "Conditionally hide successful hook execution messages",
       "author": "towc",
       "repository": "https://github.com/towc/claude-hide-hooks",
@@ -23,7 +23,7 @@
       "version": "1.0.0",
       "tags": ["hooks", "ui", "cleanup", "productivity"],
       "icon": "🙈",
-      "install": "claude plugin install claude-hide-hooks"
+      "install": "claude plugin install hide-hooks"
     }
   ]
 }

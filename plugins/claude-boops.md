@@ -33,6 +33,14 @@ Claude Boops enhances your Claude Code experience by adding customizable sound f
 
 ## Installation
 
+First, add the marketplace:
+
+```bash
+claude plugin marketplace add towc/claude-marketplace
+```
+
+Then install the plugin:
+
 ```bash
 claude plugin install boops
 ```
@@ -90,7 +98,11 @@ Instead of generated tones, you can use your own `.wav` files by placing them in
 
 ## Companion Plugins
 
-- **[Claude Hide Hooks](./claude-hide-hooks.md)** - Hide successful hook execution messages
+- **[Hide Hooks](./claude-hide-hooks.md)** - Hide successful hook execution messages
+
+```bash
+claude plugin install hide-hooks
+```
 
 ## Links
 

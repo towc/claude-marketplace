@@ -2,6 +2,23 @@
 
 A curated collection of plugins for [Claude Code](https://claude.com/claude-code).
 
+## Installation
+
+### Quick Start
+
+First, add this marketplace to Claude Code:
+
+```bash
+claude plugin marketplace add towc/claude-marketplace
+```
+
+Then install plugins:
+
+```bash
+claude plugin install boops
+claude plugin install hide-hooks
+```
+
 ## Available Plugins
 
 ### 🔊 Claude Boops
@@ -17,11 +34,11 @@ Add delightful sound feedback to Claude Code interactions.
 
 [Learn more →](./plugins/claude-boops.md)
 
-### 🙈 Claude Hide Hooks
+### 🙈 Hide Hooks
 Conditionally hide successful hook execution messages.
 
 - **Repository:** [towc/claude-hide-hooks](https://github.com/towc/claude-hide-hooks)
-- **Installation:** `claude plugin install claude-hide-hooks`
+- **Installation:** `claude plugin install hide-hooks`
 - **Features:**
   - Auto-patches on install
   - Auto-reverts on uninstall
@@ -30,23 +47,11 @@ Conditionally hide successful hook execution messages.
 
 [Learn more →](./plugins/claude-hide-hooks.md)
 
-## Installation
+## Direct Installation (Alternative)
 
-### Quick Start
-
-```bash
-# Install a plugin directly
-claude plugin install boops
-claude plugin install claude-hide-hooks
-```
-
-### From Source
+You can also clone plugins directly without the marketplace:
 
 ```bash
-# Clone the marketplace
-git clone https://github.com/towc/claude-marketplace.git
-
-# Or clone individual plugins
 cd ~/.claude/plugins/marketplaces/
 git clone https://github.com/towc/claude-boops.git
 git clone https://github.com/towc/claude-hide-hooks.git

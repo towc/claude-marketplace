@@ -1,4 +1,4 @@
-# 🙈 Claude Hide Hooks
+# 🙈 Hide Hooks
 
 Conditionally hide successful hook execution messages in Claude Code.
 
@@ -35,8 +35,16 @@ This plugin addresses the common complaint in [Issue #9603](https://github.com/a
 
 ## Installation
 
+First, add the marketplace:
+
 ```bash
-claude plugin install claude-hide-hooks
+claude plugin marketplace add towc/claude-marketplace
+```
+
+Then install the plugin:
+
+```bash
+claude plugin install hide-hooks
 ```
 
 **That's it!** The patch is applied automatically.
@@ -94,7 +102,7 @@ This allows toggling visibility with an environment variable without re-patching
 ### Automatic (Recommended)
 
 ```bash
-claude plugin uninstall claude-hide-hooks
+claude plugin uninstall hide-hooks
 ```
 
 The patch is automatically reverted on uninstallation.
