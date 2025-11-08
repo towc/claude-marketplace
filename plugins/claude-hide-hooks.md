@@ -59,6 +59,16 @@ claude
 
 Hook messages are hidden by default, giving you a cleaner terminal.
 
+### After Claude Updates
+
+When you update Claude Code, re-apply the patch:
+
+```bash
+/hide-hooks
+```
+
+**No need to uninstall/reinstall** - just run the command!
+
 ### Show Hooks When Debugging
 
 ```bash
@@ -71,14 +81,6 @@ Add to your shell profile (`.bashrc`, `.zshrc`, etc.):
 
 ```bash
 export SHOW_CLAUDE_HOOKS=true
-```
-
-### Manual Patch (Optional)
-
-If you need to re-apply the patch:
-
-```bash
-/hide-hooks
 ```
 
 ## How It Works
