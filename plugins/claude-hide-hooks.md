@@ -47,17 +47,21 @@ Then install the plugin:
 claude plugin install hide-hooks
 ```
 
-**That's it!** The patch is applied automatically.
+After installation, **apply the patch:**
+
+```bash
+/hide-hooks
+```
 
 ## Usage
 
 ### Default Behavior (Hooks Hidden)
 
+Once patched, hook messages are hidden by default:
+
 ```bash
 claude
 ```
-
-Hook messages are hidden by default, giving you a cleaner terminal.
 
 ### After Claude Updates
 
