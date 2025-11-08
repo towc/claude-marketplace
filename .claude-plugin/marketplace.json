@@ -1,0 +1,19 @@
+{
+  "name": "towc's Claude Plugins",
+  "description": "A curated collection of plugins for Claude Code",
+  "author": "towc",
+  "homepage": "https://github.com/towc/claude-marketplace",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "boops",
+      "repository": "https://github.com/towc/claude-boops",
+      "description": "Add delightful sound feedback to Claude Code interactions"
+    },
+    {
+      "name": "hide-hooks",
+      "repository": "https://github.com/towc/claude-hide-hooks",
+      "description": "Conditionally hide successful hook execution messages"
+    }
+  ]
+}
